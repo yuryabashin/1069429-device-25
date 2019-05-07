@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Юрий Абашин](https://up.htmlacademy.ru/htmlcss/25/user/1069429).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
