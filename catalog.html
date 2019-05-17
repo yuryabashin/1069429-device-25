@@ -28,6 +28,20 @@
  		  <li><a href="delivery.html">Доставка</a></li>
  		  <li><a href="warranty.html">Гарантия</a></li>
  		  <li class="contacts-link"><a href="contacts.tml">Контакты</a></li>
+ 		</ul>
+ 		<ul class=catalog-menu">
+ 		  <ul class="catalog-menu-section-1">	
+ 		    <li><a href="#">Виртуальная реальность</a></li>
+ 		    <li><a href="#">Моноподы для селфи</a></li>
+ 		    <li><a href="#">Экшн-камеры</a></li>	
+ 		  </ul>
+ 		  <ul class="catalog-menu-section-2">	
+ 		    <li><a href="#">Фитнес-браслеты</a></li>
+ 		    <li><a href="#">Умные часы</a></li>	
+ 		  </ul> 
+ 		  <ul class="catalog-menu-section-3">	
+ 		    <li><a href="#">Квадрокоптеры</a></li>
+ 		  </ul> 
  		</ul>	
  	  </nav>	
  	</header>
@@ -43,19 +57,61 @@
       <section class="filters">
     	<h2 class="visually-hidden">Фильтр параметров</h2>
     	<!--Здесь будет форма-->
-    	<h3>Цвет</h3>
-    	<ul class="color-options">
-    	  <li>Черный</li>
-    	  <li>Белый</li>
-    	  <li>Синий</li>
-    	  <li>Красный</li>
-    	  <li>Розовый</li>
-    	</ul>
-    	<h3>Bluetooth</h3>
-    	<ul class="connection-options">	
-    	  <li>Есть</li>
-    	  <li>Нет</li>	
-    	</ul>	
+    	<form class="filters-options" method="get" action="https://device.ru">
+    	  <fieldset>
+    	    <legend>Цвет</legend>
+    	    <ul class="color-options">
+    	      <li>
+    	        <label>
+                  <input type="checkbox" name="black" checked>
+  	                Черный
+  	            </label>    
+    	      </li>
+    	      <li>
+    	        <label>
+    	          <input type="checkbox" name="white">
+    	            Белый
+    	        </label>    
+    	      </li>
+    	      <li>
+    	        <label>
+    	          <input type="checkbox" name="blue" checked>
+    	            Синий
+    	        </label>    
+    	      </li>
+    	      <li>
+    	        <label>
+    	          <input type="checkbox" name="red" checked>
+    	            Красный
+    	        </label>    
+    	      </li>
+    	      <li>
+    	        <label>
+    	          <input type="checkbox" name="pink">
+    	            Розовый
+    	        </label>    
+    	      </li>
+    	    </ul>
+    	  </fieldset>
+    	  <fieldset>
+    	    <legend>Bluetooth</legend>
+    	 	<ul class="connection-options">	
+    	      <li>
+    	        <label>
+    	          <input type="radio" name="radio" checked>
+    	            Есть
+    	        </label>    
+    	      </li>
+    	      <li>
+    	        <label>
+    	          <input type="radio" name="radio">
+    	            Нет
+    	        </label>    
+    	      </li>	
+    	    </ul>
+    	  </fieldset>
+    	  <button type="submit">Показать</button>
+    	</form>  	
       </section>	
       
       <section class="catalog-list">

@@ -58,7 +58,7 @@
  		  Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
  		  проверить работоспособность покупки. Всякое бывает.
  		</p>
- 		<a href="#"><img src="img/map.jpg" width="560" height="222" alt="карта"></a>
+ 		<a href="#"><img src="img/map.jpg" width="560" height="222" alt="Пункт самовывоза по адресу: г. Москва, ул7 Строителей, 15"></a>
  		<a class="button" href="message.html">Напишите нам</a>	
  	  </section>
 
@@ -92,6 +92,27 @@
  		<p class="copyright"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="html.svg" alt="Картинка ссылка"></a></p> 
  	  </div>	
  	</footer>
+
+ 	<section class="modal modal-message">
+      <h2 class="visually-hidden">Напешите нам</h2>
+      <form action="https://device.ru" method="post">
+      	<lable for="name-field">Ваше имя:</lable>
+      	<input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+   		<label for="email-field">Ваш e-mail:</label>
+        <input type="text" name="email" id="email-field" placeholder="email@example.com"><br>
+        <label for="message-field">Текст письма:</label><br>
+        <textarea id="message-field" placeholder="В свободной форме" rows="5" cols="67"></textarea><br>
+        <button type="submit">Отправить</button>
+      </form>	
+      <button class="modal-close" type="button" title="Закрыть окно">x</button>
+    </section>
+
+     <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map-big.jpg" width="960" height="559" alt="Мы на карте"><br>
+      <button class="modal-close" type="button"title="Закрыть окно">x</button>
+    </section>
+
 
   </body>
 </html>
