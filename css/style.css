@@ -1,0 +1,138 @@
+@font-face {
+	font-family: "Gilroy Light";
+	src: url("../fonts/gilroylight.woff") format("woff");
+	src: url("../fonts/gilroylight.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Gilroy Bold";
+	src: url("../fonts/gilroyextrabold.woff") format("woff");
+	src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #464646;
+	font-weight: 300;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-family: "Gilroy Bold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	color: #000000;
+}
+
+.main-header {
+	background-color: #f7e296;
+}
+
+.main-footer {
+	background-color: #464646;
+}
+
+.search,
+.header-user-menu,
+.site-navigation,
+.brands-list,
+.catalog-menu-section-1,
+.catalog-menu-section-2,
+.catalog-menu-section-3,
+.breadcrumbs,
+.catalog-list {
+	list-style: none;
+}
+
+.header-user-menu a,
+.site-navigation a,
+.catalog-menu a,
+.breadcrumbs a,
+.catalog-list a {
+	color: #000000;
+}
+
+.search-bar,
+.header-user-menu {
+	font-family: "Open Sans", sans-serif;
+}
+
+.search-bar {
+	opacity: 0.3;
+}
+
+.catalog-item-title {
+	font-family: "Gilroy Bold", Arial, sans-serif;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.catalog-item-price {
+	font-size: 16px;
+}
+
+.site-navigation a,
+.about a,
+.contacts a,
+.filters p {
+	font-family: "Gilroy Bold", Arial, sans-serif;
+	font-size: 18px;
+	letter-spacing: 3px;
+	line-height: 24px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.breadcrumbs li {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.page-title {
+	font-family: "Gilroy Bold", Arial, sans-serif;
+	font-size: 47px;
+	letter-spacing: 1px;
+	line-height: 48px;
+	color: #000000;
+}
+
+.address,
+.phone {
+	color: #ffffff;
+}
+
+.footer-user-menu a {
+ color: #ffffff;
+}
+
+.footer-site-menu a {
+	font-family: "Gilroy Bold", Arial, sans-serif;
+	font-size: 18px;
+	letter-spacing: 3px;
+	line-height: 24px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
