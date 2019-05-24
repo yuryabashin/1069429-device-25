@@ -149,14 +149,16 @@ h2 {
 .catalog-link a:hover,
 .delivery-link a:hover,
 .warranty-link a:hover, 
-.contacts-link a:hover {
+.contacts-link a:hover,
+.catalog-item a:hover {
 	opacity: 0.6;
 }
 
 .catalog-link a:active,
 .delivery-link a:active,
 .warranty-link a:active, 
-.contacts-link a:active {
+.contacts-link a:active,
+.catalog-item a:active {
 	opacity: 0.3;
 }
 
@@ -170,7 +172,7 @@ h2 {
 .catalog-item-title {
 	font-family: "Gilroy Bold", Arial, sans-serif;
 	font-size: 18px;
-	letter-spacing: 1px;
+	letter-spacing: 0.2px;
 	line-height: 24px;
 	color: #000000;
 }
