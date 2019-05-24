@@ -49,6 +49,10 @@ h2 {
 	background-color: #f7e296;
 }
 
+.main-header-logo a:hover {
+	opacity: 0.6;
+}
+
 .main-footer {
 	background-color: #464646;
 }
@@ -78,8 +82,89 @@ h2 {
 	font-family: "Open Sans", sans-serif;
 }
 
-.search-bar {
+.search-field {
+	border:none;
+	outline: none;
+  background-color: #f7e296;
+}
+
+.search-bar,
+.breadcrumbs-link {
 	opacity: 0.3;
+}
+
+.search-bar:hover,
+.breadcrumbs-link:hover {
+	opacity: 0.6;
+}
+
+.search-bar:focus {
+	opacity: 1;
+}
+
+.breadcrumbs-link:active {
+	opacity: 0.1;
+}
+
+.catalog-menu-item {
+	letter-spacing: 0.2px;
+}
+
+.user a:hover,
+.login-link a:hover,
+.logout-link a:hover,
+.compare-link a:hover,
+.cart-link a:hover,
+.catalog-menu-item a:hover {
+	opacity: 0.6;
+}
+
+.user a:active,
+.login-link a:active,
+.logout-link a:active,
+.compare-link a:active,
+.cart-link a:active,
+.catalog-menu-item a:active {
+	opacity: 0.3;
+}
+
+.footer-login-link a,
+.footer-compare-link a,
+.footer-cart-link a {
+	opacity: 0.7;
+}
+
+.footer-login-link a:hover,
+.footer-compare-link a:hover,
+.footer-cart-link a:hover {
+	opacity: 1;
+}
+
+.footer-login-link a:active,
+.footer-compare-link a:active,
+.footer-cart-link a:active {
+	opacity: 0.3;
+}
+
+.catalog-link a:hover,
+.delivery-link a:hover,
+.warranty-link a:hover, 
+.contacts-link a:hover {
+	opacity: 0.6;
+}
+
+.catalog-link a:active,
+.delivery-link a:active,
+.warranty-link a:active, 
+.contacts-link a:active {
+	opacity: 0.3;
+}
+
+.trans-companies {
+	font-family: "Gilroy Bold", Arial, sans-serif;
+	font-size: 16px;
+	color: #000000;
+	line-height: 40px;
 }
 
 .catalog-item-title {
@@ -100,10 +185,15 @@ h2 {
 .filters p {
 	font-family: "Gilroy Bold", Arial, sans-serif;
 	font-size: 18px;
-	letter-spacing: 3px;
+	letter-spacing: 3.6px;
 	line-height: 24px;
 	color: #000000;
 	text-transform: uppercase;
+}
+
+.about a:active,
+.contacts a:active {
+	opacity: 0.3;
 }
 
 .breadcrumbs li {
@@ -131,8 +221,12 @@ h2 {
 .footer-site-menu a {
 	font-family: "Gilroy Bold", Arial, sans-serif;
 	font-size: 18px;
-	letter-spacing: 3px;
+	letter-spacing: 3.6px;
 	line-height: 24px;
 	color: #ffffff;
 	text-transform: uppercase;
+}
+
+.logo-html {
+	background-color: f4be04;
 }
