@@ -34,6 +34,18 @@ body {
 	background-color: #ffffff;
 }
 
+/*body > * {
+	background: rgba(255, 0, 0, 0.3);
+}
+
+body > * > * > * {
+	background: rgba(255, 0, 255, 0.3);
+}
+
+body > * > * > * > * {
+	background: rgba(255, 0, 200, 0.3);
+} */
+
 a {
 	text-decoration: none;
 }
@@ -46,9 +58,9 @@ h2 {
 	color: #000000;
 }
 
-.main-header {
+/*.main-header {
 	background-color: #f7e296;
-}
+}*/
 
 .main-header-logo a:hover {
 	opacity: 0.6;
@@ -232,4 +244,157 @@ h2 {
 
 .logo-html {
 	background-color: f4be04;
+}
+
+/*-------Сетки-------*/
+
+body {
+	width: 1440px;
+}
+
+.main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-header-logo {
+	width: 164px;
+	height: 36px;
+}
+
+.main-navigation-wrapper {
+	width: 1160px;
+	min-height: 299px; /*временно для сеток*/
+	background-color: #f7e296;
+	margin-top: 40px;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.main-header-logo-wrapper {
+	margin: 0 auto;
+	padding: 0 60px;
+}
+
+.header-user-menu-wrapper {
+	padding: 0 60px;
+}
+
+.main-navigation-wrapper .header-user-menu-wrapper  {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-navigation-wrapper {
+	margin-top: 50px;
+	padding: 0 60px;
+}
+
+.search {
+	padding: 0;
+	margin: 0;
+}
+
+.header-user-menu {
+	padding: 0;
+	margin: 0;
+}
+
+.site-navigation {
+	padding: 0;
+	margin: 0;	
+}
+
+.index-row {
+	margin-top: 93px;
+}
+
+.brands-list {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+} 
+
+.index-columns {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 93px;
+}
+
+.about {
+	width: 488px;
+}
+
+.contacts {
+	width: 562px;
+}
+
+.page-title {
+	padding-left: 60px;
+}
+
+.breadcrumbs {
+	padding-left: 60px;
+}
+
+.catalog-columns {
+	display: flex;
+}
+
+.filters {
+	width: 328px;
+	min-height: 1287px;
+	padding-left: 60px;
+}
+
+.catalog {
+	width: 832px;
+}
+
+.catalog-list {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.catalog-item {
+	width: 360px;
+	min-height: 500px;
+	margin-bottom: 20px;
+	margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+	margin-right: 0;
+}
+
+.main-footer {
+	margin-top: 95px;
+	padding-top: 65px;
+}
+
+.main-footer .container {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-middle {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-bottom {
+	display: flex;
+	justify-content: space-between;
 }
