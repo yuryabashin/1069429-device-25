@@ -70,6 +70,21 @@ h2 {
 	background-color: #464646;
 }
 
+.search {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.icon {
+	background-image: url(../img/search.svg);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-top: 8px;
+	padding-right: 20px;
+}
+
 .search,
 .header-user-menu,
 .site-navigation,
@@ -248,9 +263,6 @@ h2 {
 
 /*-------Сетки-------*/
 
-body {
-	width: 1440px;
-}
 
 .main-navigation {
 	display: flex;
@@ -261,6 +273,8 @@ body {
 .main-header-logo {
 	width: 164px;
 	height: 36px;
+	position: relative;
+	bottom: 17px;
 }
 
 .main-navigation-wrapper {
