@@ -983,10 +983,10 @@ h2 {
 	margin: 0 auto;
 }
 
-.catalog-columns-wrapper {
+/*.catalog-columns-wrapper {
 	width: 100%;
 	background-image: linear-gradient(to right, #efefef 0, #efefef 28%, #fff 28%, #fff 100%);
-}
+}*/
 
 /*-----Filters-----*/
 
@@ -996,6 +996,7 @@ h2 {
 	flex-direction: column;
 	align-items: flex-end;
 	width: 328px;
+	background-color: #efefef;
 }
 
 .filters::before {
@@ -1004,6 +1005,7 @@ h2 {
 	top: 0;
 	right: 0;
 	z-index: -1;
+	width: 100vw;
 	height: 100%;
 	background-color: #efefef; 
 }
