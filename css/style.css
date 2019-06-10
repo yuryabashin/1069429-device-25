@@ -186,7 +186,7 @@ h2 {
 .breadcrumbs-link:after {
 	content: "";
 	position: absolute;
-  	top: 9px;
+  	top: 13px;
   	right: 17px;
 
 	width: 4px;
@@ -327,6 +327,17 @@ h2 {
 	background-image: url(../img/user.svg);
 }
 
+.user-profile::before {
+    bottom: 4px;
+    left: -26px;
+	background-image: url(../img/user.svg);
+}
+
+.link-logout {
+	margin-left: 15px;
+	opacity: .3;
+}
+
 .compare {
 	width: 110px;
 }
@@ -389,8 +400,6 @@ h2 {
 	bottom: 3px;
 	background-color: #b8a974;  
 }
-
-
 
 .catalog-sub-menu-wrapper {
 	position: absolute;
@@ -465,15 +474,14 @@ h2 {
 	margin-right: -3px;
 }
 
-
-
 .breadcrumbs-link a {
-	opacity: 0.3;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, .3);
 }
 
-
-.breadcrumbs-link:hover {
-	opacity: 0.6;
+.breadcrumbs-link a:hover {
+	color: rgba(0, 0, 0, .6);
 }
 
 .search-bar:focus {
@@ -484,8 +492,8 @@ h2 {
 	width: 540px;
 }
 
-.breadcrumbs-link:active {
-	opacity: 0.1;
+.breadcrumbs-link a:active {
+	color: rgba(0, 0, 0, .1);
 }
 
 .catalog-menu-item {
@@ -594,11 +602,6 @@ h2 {
 .about a:active,
 .contacts a:active {
 	opacity: 0.3;
-}
-
-.breadcrumbs li {
-	font-size: 14px;
-	line-height: 24px;
 }
 
 .page-title {
@@ -802,6 +805,23 @@ h2 {
 	opacity: 0.7;
 }
 
+.footer-login-link-text {
+	margin-right: 16px;
+}
+
+.footer-logout-link:hover,
+.footer-logout-link:focus {
+	opacity: 0.6;
+}
+
+.footer-logout-link {
+	opacity: 0.3;
+}
+
+.footer-logout-link:active {
+	opacity: 0.3;
+}
+
 .footer-login-link:hover .footer-login-link-icon,
 .footer-login-link:focus .footer-login-link-icon,
 .footer-compare-link:hover .footer-compare-link-icon,
@@ -907,14 +927,6 @@ h2 {
 	left: 60px;
 }
 
-/*.header-user-menu {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0;
-	padding: 0;
-}*/
-
 .header-menu-wrapper  {
  	padding-left: 60px;
  	padding-right: 60px;
@@ -969,6 +981,11 @@ h2 {
 	justify-content: center;
 	width: 1160px;
 	margin: 0 auto;
+}
+
+.catalog-columns-wrapper {
+	width: 100%;
+	background-image: linear-gradient(to right, #efefef 0, #efefef 28%, #fff 28%, #fff 100%);
 }
 
 /*-----Filters-----*/
