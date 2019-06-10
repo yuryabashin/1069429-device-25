@@ -996,7 +996,6 @@ h2 {
 	flex-direction: column;
 	align-items: flex-end;
 	width: 328px;
-	background-color: #efefef;
 }
 
 .filters::before {
