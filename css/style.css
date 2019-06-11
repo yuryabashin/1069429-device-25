@@ -1426,6 +1426,10 @@ h2 {
 	animation-duration: 0.6s;
 }
 
+.popup-message-active {
+	display: block;
+}
+
 .popup-message-wrapper {
 	position: relative;
 	display: flex;
@@ -1534,7 +1538,8 @@ h2 {
 	color: rgba(70, 70, 70, 0.4);
 }
 
-.popup-close {
+.popup-message-close,
+.popup-map-close {
 	position: absolute;
 	top: 22px;
 	right: 22px;
@@ -1547,7 +1552,8 @@ h2 {
 	opacity: 0.5;  
 }
 
-.popup-close::before {
+.popup-message-close::before,
+.popup-map-close::before {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -1558,7 +1564,8 @@ h2 {
 	transform: translate(-50%, -50%) rotate(45deg);
 }
  
-.popup-close::after {
+.popup-message-close::after,
+.popup-map-close::after {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -1569,12 +1576,14 @@ h2 {
 	transform: translate(-50%, -50%) rotate(135deg);
 }
 
-.popup-close:hover {
+.popup-message-close:hover,
+.popup-map-close:hover {
 	opacity: 1;
 	transition: all 0.2s linear;
 }
 
-.popup-close:active {
+.popup-message-close:active,
+.popup-map-close:active {
 	opacity: 0.3;
 }
 
@@ -1593,6 +1602,10 @@ h2 {
 	transform: translate(-50%, -50%);
 	animation-name: bounce;
 	animation-duration: 0.6s;	
+}
+
+.modal-map-active {
+	display: block;
 }
 
 .popup-map-wrapper {
