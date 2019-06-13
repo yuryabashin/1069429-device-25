@@ -966,7 +966,9 @@ h2 {
 
 .brands-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	margin: 0;
 	padding: 0;
 } 
 
@@ -1412,6 +1414,43 @@ h2 {
 
 /*-----Popup Message-----*/
 
+
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px) translate(-50%, -50%);
+	}
+	70% {
+		transform: translateY(30px) translate(-50%, -50%);
+	}
+	90% {
+		transform: translateY(-10px) translate(-50%, -50%);
+	}
+	100% {
+		transform: translateY(0) translate(-50%, -50%);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translate(-50%, -50%) translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translate(-50%, -50%) translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate(-50%, -50%) translateX(10px);
+	}
+}
+
+
 .popup-message {
 	position: fixed;
 	top: 50%;
@@ -1428,6 +1467,11 @@ h2 {
 
 .popup-message-active {
 	display: block;
+}
+
+.popup-message-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
 }
 
 .popup-message-wrapper {
@@ -1514,7 +1558,7 @@ h2 {
 }
 
 .popup-message input:invalid {
-	background-color: rgba (237, 181, 181, 1.0);
+	background-color: rgba(237, 181, 181, 1.0);
 }
 
 .popup-message input::placeholder {
@@ -1589,7 +1633,7 @@ h2 {
 
 /*-----Popup Map-----*/
 
-.modal-map {
+.popup-map {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -1604,7 +1648,7 @@ h2 {
 	animation-duration: 0.6s;	
 }
 
-.modal-map-active {
+.popup-map-active {
 	display: block;
 }
 

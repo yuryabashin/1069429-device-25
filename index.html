@@ -84,6 +84,7 @@
       </section>-->
       	<div class="index-row">
           <section class="brands">
+          	<h2 class="visually-hidden">Популярные бренды</h2>
             <ul class="brands-list">
               <li><a href="#"><img src="img/logo-1.jpg" width="260" height="100"></a></li>
               <li><a href="#"><img src="img/logo-2.jpg" width="260" height="100"></a></li>
@@ -260,7 +261,7 @@
           </div>
           <div class="popup-input-wrapper popup-input-wrapper-email">
    		      <label for="email-field">Ваш e-mail:</label>
-            <input type="text" name="email" id="email-field" placeholder="email@example.com">
+            <input type="email" name="user-email" id="email-field" placeholder="email@example.com">
           </div>
           <div class="popup-input-wrapper popup-input-wrapper-message">
             <label for="user-message">Текст письма:</label>
@@ -275,45 +276,15 @@
       </div>    
     </section>
 
-    <section class="modal modal-map">
+    <section class="modal popup-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <div class="popup-map-wrapper">
-      	<img src="img/map-big.jpg" width="960" height="559" alt="Мы на карте">
+      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931576663!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1560414080383!5m2!1sru!2sru" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
       	<button class="popup-map-close" type="button" aria-label="Закрыть окно с картой">
       		<span class="visually-hidden">Закртыть окно с картой</span>	
       	</button>	
       </div>	
     </section>
-    <script type="text/javascript">
-    	var linkMap = document.querySelector(".map-img");
-    	var linkMessage = document.querySelector(".message-button");
-    	var popupMap = document.querySelector(".modal-map");
-    	var popupMessage = document.querySelector(".popup-message");
-    	var closeMap = document.querySelector(".popup-map-close");
-    	var closeMessage = document.querySelector(".popup-message-close");
-
-    	var userName = popupMessage.querySelector("[name=name]");
-
-    	linkMap.addEventListener("click", function (evt) {
-    		evt.preventDefault();
-    		popupMap.classList.add("modal-map-active");
-    	});
-
-    	closeMap.addEventListener("click", function (evt) {
-    		evt.preventDefault();
-    		popupMap.classList.remove("modal-map-active");
-    	});
-
-    	linkMessage.addEventListener("click", function (evt) {
-    		evt.preventDefault();
-    		popupMessage.classList.add("popup-message-active");
-    		userName.focus();
-    	});
-
-    	closeMessage.addEventListener("click", function (evt) {
-    		evt.preventDefault();
-    		popupMessage.classList.remove("popup-message-active");
-    	});
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
