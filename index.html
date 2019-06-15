@@ -75,24 +75,105 @@
  	    </nav>	
  	  </header>
  	
- 	  <main class="container">
+ 	  <main class="page-content">
+ 	  	<div class="container">	
       <!--<section class="slider">
       </section>-->
-      <!--<section class="popular">
-      </section>-->
-      <!--<section class="services">
-      </section>-->
-      	<div class="index-row">
+          <section class="popular">
+      		<ul class="popular-list">
+      		  <li class="popular-item">
+      		  	<a class="popular-item-link" href="#">
+      		  	  <div class="popular-item-wrapper popular-item-wrapper-img-1">
+      		  	  	<img class="popular-item-img-1" src="img/popular-1.png" alt="Раздел Виртуальная Реальность" width="97" height="55">
+      		  	  </div>	
+      		  	  <p class="popular-item-title">Виртуальная реальность</p>
+      		  	</a>	
+      		  </li>	
+      		  <li class="popular-item">
+      		  	<a class="popular-item-link" href="catalog.html">
+      		  	  <div class="popular-item-wrapper popular-item-wrapper-img-2">
+      		  	  	<img class="popular-item-img-2" src="img/popular-2.png" alt="Раздел Моноподы для Селфи" width="86" height="117">
+      		  	  </div>	
+      		  	  <p class="popular-item-title">Моноподы для селфи</p>
+      		  	</a>
+      		  </li>	
+      		  <li class="popular-item">
+      		  	<a class="popular-item-link" href="#">
+      		  	  <div class="popular-item-wrapper popular-item-wrapper-img-3">
+      		  	  	<img class="popular-item-img-3" src="img/popular-3.png" alt="Раздел Экшн Камеры" width="71" height="87">
+      		  	  </div>	
+      		  	  <p class="popular-item-title">Экшн-камеры</p>
+      		  	</a>	
+      		  </li>	
+      		  <li class="popular-item">
+      		  	<a class="popular-item-link" href="#">
+      		  	  <div class="popular-item-wrapper popular-item-wrapper-img-4">
+      		  	  	<img class="popular-item-img-4" src="img/popular-4.png" alt="Раздел Экшн Камеры" width="107" height="65">
+      		  	  </div>	
+      		  	  <p class="popular-item-title">Фитнесс-браслеты</p>
+      		  	</a>	
+      		  </li>	
+      		  <li class="popular-item">
+      		  	<a class="popular-item-link" href="#">
+      		  	  <div class="popular-item-wrapper popular-item-wrapper-img-5">
+      		  	  	<img class="popular-item-img-5" src="img/popular-5.png" alt="Раздел Умные часы" width="56" height="98">
+      		  	  </div>	
+      		  	  <p class="popular-item-title">Умные часы</p>
+      		  	</a>
+      		  </li>	
+      		  <li class="popular-item">
+      		  	<a class="popular-item-link" href="#">
+      		  	  <div class="popular-item-wrapper popular-item-wrapper-img-6">
+      		  	  	<img class="popular-item-img-6" src="img/popular-6.png" alt="Раздел Квадрокоптеры" width="132" height="69">
+      		  	  </div>	
+      		  	  <p class="popular-item-title">Квадрокоптеры</p>
+      		  	</a>
+      		  </li>	
+      		</ul>	
+          </section>
+        </div>
+      <section class="services-slider">
+        <div class="container">
+          <div class="services-slider-wrapper"> 
+            <h2 class="visually-hidden">Наши сервисы</h2>
+            <input class="services-slider-input visually-hidden" id="services-control-1" type="radio" name="services-control" checked>
+            <input class="services-slider-input visually-hidden" id="services-control-2" type="radio" name="services-control">
+            <input class="services-slider-input visually-hidden" id="services-control-3" type="radio" name="services-control">
+          <div class="services-slider-item services-slider-item-active services-slider-item-delivery">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="services-slider-item services-slider-item-warranty">
+              <h3>Гарантия</h3>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
+				Товар, не дом, конечно же.</p>
+            </div>
+            <div class="services-slider-item services-slider-item-credit">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </div>
+        
+          <div class="services-slider-controls">
+            <label class="services-slider-control services-slider-control-active" for="services-control-1">Доставка</label>
+            <label class="services-slider-control" for="services-control-2">Гарантия</label>
+            <label class="services-slider-control" for="services-control-3">Кредит</label>
+          </div>
+          </div>
+        </div>    
+      </section>	
+
+      <div class="container">
+        
           <section class="brands">
           	<h2 class="visually-hidden">Популярные бренды</h2>
             <ul class="brands-list">
-              <li><a href="#"><img src="img/logo-1.jpg" width="260" height="100"></a></li>
-              <li><a href="#"><img src="img/logo-2.jpg" width="260" height="100"></a></li>
-              <li><a href="#"><img src="img/logo-3.jpg" width="260" height="100"></a></li>
-              <li><a href="#"><img src="img/logo-4.jpg" width="260" height="100"></a></li>
+              <li class="brands-list-item"><a class="brand-link brand-link-1" href="#"></a></li>
+              <li class="brands-list-item"><a class="brand-link brand-link-2" href="#"></a></li>
+              <li class="brands-list-item"><a class="brand-link brand-link-3" href="#"></a></li>
+              <li class="brands-list-item"><a class="brand-link brand-link-4" href="#"></a></li>
             </ul>   
           </section> 
-        </div> 
+        
  	    <div class="index-columns">
  	      <section class="about">
  	        <h2>О нас</h2>
@@ -112,8 +193,7 @@
  		        <li class="trans-companies-item">ЖелДорЭкспедиция</li>
  		      </ul>
  	   	    <a class="button" href="about.html">Подробнее о нас</a>	
- 	      </section>
- 		
+ 	      </section> 		
  	      <section class="contacts">
  		      <h2>Контакты</h2>
  		        <p>
@@ -126,6 +206,7 @@
             </div>  	
  	      </section>
         </div>
+      </div>
  	  </main>
  	
  	  <footer class="main-footer">
@@ -257,7 +338,7 @@
         <form class="popup-message-form" method="post" action="https://echo.html.academy.ru">
           <div class="popup-input-wrapper popup-input-wrapper-name">
             <label for="name-field">Ваше имя:</label>
-            <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+            <input type="text" name="user-name" id="name-field" placeholder="Имя Фамилия">
           </div>
           <div class="popup-input-wrapper popup-input-wrapper-email">
    		      <label for="email-field">Ваш e-mail:</label>

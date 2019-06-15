@@ -5,8 +5,10 @@ var popupMessage = document.querySelector(".popup-message");
 var closeMap = document.querySelector(".popup-map-close");
 var closeMessage = document.querySelector(".popup-message-close");
 var form = popupMessage.querySelector("form");
-var userName = popupMessage.querySelector("[name=name]");
+var userName = popupMessage.querySelector("[name=user-name]");
 var email = popupMessage.querySelector("[name=user-email]");
+
+
 
 linkMap.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -25,12 +27,13 @@ linkMessage.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-    if (!name.value || !email.value) {
+    if (!userName.value || !email.value) {
     evt.preventDefault();
+    
     popupMessage.classList.remove("popup-message-error");
     popupMessage.offsetWidth = popupMessage.offsetWidth;
     popupMessage.classList.add("popup-message-error");
-    }
+    } 
 })
 
 window.addEventListener("keydown", function (evt) {
