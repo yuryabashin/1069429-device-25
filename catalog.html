@@ -72,7 +72,8 @@
               <li class="site-nvigation-item contacts-item">
                 <a class="site-navigation-link contacts-link" href="#">Контакты</a>
               </li>
-            </ul>  
+            </ul>
+          </div>    
         </div>   
       </nav>  
     </header>
@@ -89,8 +90,32 @@
          
           <section class="filters">
     	      <h2 class="visually-hidden">Фильтр параметров</h2>
-            
+            <div class="filters-title">
+              <h2>Фильтры:</h2>
+            </div> 
     	      <form class="filters-options" method="get" action="https://echo.htmlacademy.ru">
+              <div class="filters-item-wrapper">
+                <fieldset class="filters-item filters-item-price">
+                  <legend>Стоимость</legend>
+                  <div class="filter-range">
+                    <div class="filter-range-controls">
+                      <div calss="filter-range-scale">
+                        <div class="filter-range-bar"></div>
+                      </div>
+                      <div class="filter-range-toggle filter-range-toggle-min"></div>
+                      <div class="filter-range-toggle filter-range-toggle-max"></div>  
+                    </div>
+                    <div class="filter-range-price">
+                      <label class="filter-range-label filter-range-label-min">от
+                        <input class="filter-range-input" type="text" name="min-price" value="0">
+                      </label>
+                      <label class="filter-range-label filter-range-label-max">до
+                        <input class="filter-range-input" type="text" name="max-price" value="5000">
+                      </label>
+                    </div>  
+                  </div>  
+                </fieldset>
+              </div> 
               <div class="filters-item-wrapper">
                 <fieldset class="filters-item">
     	          <legend>Цвет</legend>
@@ -139,7 +164,33 @@
         
         
           <section class="goods">
-    	    <h2 class="visually-hidden">Список моноподов</h2>
+    	      <h2 class="visually-hidden">Список моноподов</h2>
+            <section class="goods-sort">
+              <h3>Сортировка:</h3>
+              <ul class="goods-sort-list">
+                <li class="goods-sort-item goods-sort-item-active">
+                  <a href="#">По цене</a>
+                </li>
+                <li class="goods-sort-item">
+                  <a href="#">По типу</a>
+                </li>
+                <li class="goods-sort-item">
+                  <a href="#">По популярности</a>
+                </li>  
+              </ul>
+              <ul class="goods-sort-updown">
+                <li class="goods-sort-up">
+                  <a class="goods-sort-up-link" href="#">
+                    <img src="img/sort-up.png" alt="По возрастанию" width="11" height="10">
+                  </a>
+                </li>
+                <li class="goods-sort-down goods-sort-down-active">
+                  <a class="goods-sort-down-link" href="#">
+                    <img src="img/sort-down.png" alt="По убыванию" width="11" height="10">
+                  </a>
+                </li>
+              </ul> 
+            </section>  
     	    <ul class="goods-list">
     	      <li class="goods-item">
               <p class="goods-item-image">
@@ -233,7 +284,7 @@
             </svg>
           </a>
           <ul class="footer-user-menu">
-            <li>
+            <li class="footer-user-menu-item footer-user-menu-profile">
               <a class="footer-login-link footer-user-profile" href="#">
                 <svg class="footer-login-link-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
@@ -243,7 +294,7 @@
               </a>
               <a class="footer-logout-link" href="#">Выйти</a>
             </li>
-            <li>
+            <li class="footer-user-menu-item footer-user-menu-compare">
               <a class="footer-compare-link" href="compare.html">
                 <svg class="footer-compare-link-icon" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
@@ -253,7 +304,7 @@
                 </svg><span class="footer-compare-link-text">Сравнить</span>
               </a>
             </li>
-            <li>
+            <li class="footer-user-menu-item footer-user-menu-cart">
               <a class="footer-cart-link" href="cart">
                 <svg class="footer-cart-link-icon" version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
