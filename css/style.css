@@ -71,18 +71,6 @@ body {
 	background-color: #ffffff;
 }
 
-/*body > * {
-	background: rgba(255, 0, 0, 0.3);
-}
-
-body > * > * > * {
-	background: rgba(255, 0, 255, 0.3);
-}
-
-body > * > * > * > * {
-	background: rgba(255, 0, 200, 0.3);
-} */
-
 a {
 	text-decoration: none;
 }
@@ -100,10 +88,6 @@ h2 {
 	letter-spacing: 0.5px;
 	color: #000000;
 }
-
-/*.main-header {
-	background-color: #f7e296;
-}*/
 
 .main-header-logo-wrapper a {
 	cursor: pointer;
@@ -199,6 +183,7 @@ h2 {
 	background-repeat: no-repeat;
 	opacity: 1;
 }
+
 /*-----Поиск-----*/
 
 .search-field {
@@ -351,8 +336,6 @@ h2 {
 	background-image: url(../img/compare.svg);
 }
 
-
-
 .cart {
 	width: 110px;
 	text-align: right;
@@ -363,7 +346,6 @@ h2 {
   left: -24px;
 	background-image: url(../img/cart.svg);
 }
-
 
 /*-----Site Navigation-----*/
 
@@ -406,10 +388,11 @@ h2 {
 
 .catalog-sub-menu-wrapper {
 	position: absolute;
-	top: 22px;
+	top: 24px;
 	left: -60px;
 	z-index: 2;
-	display: none;
+	/*display: none;*/
+	opacity: 0;
 	width: 1160px;
 	padding-top: 26px;
 	padding-bottom: 34px;
@@ -444,15 +427,16 @@ h2 {
 }
 
 .catalog-link:hover + .catalog-sub-menu-wrapper {
-	display: block;
+	opacity: 1;
 }
 
-.catalog-sub-menu-wrapper:hover {
-	display: block;
+.catalog-sub-menu-wrapper:hover,
+.catalog-sub-menu-wrapper:focus-within {
+	opacity: 1;
 }
 
 .catalog-sub-menu-column a {
-	display: block;
+	opacity: 1;
 }
 
 .catalog-sub-menu-column a:hover {
@@ -551,7 +535,6 @@ h2 {
 	height: 323px;
 }
 
-
 .site-navigation-link  {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 700;
@@ -587,7 +570,7 @@ h2 {
 }
 
 .button:hover::before,
-.bitton:focus::before {
+.button:focus::before {
 	top:0;
 	height: 40px;
 	margin: 0;
@@ -602,7 +585,6 @@ h2 {
 	opacity: 0.3;
 	transition: all 0.3s linear;
 }
-
 
 .about a:active,
 .contacts a:active {
@@ -1115,7 +1097,6 @@ h2 {
 }
 /*-------Сетки-------*/
 
-
 .main-navigation {
 	display: flex;
 	flex-direction: column;
@@ -1253,7 +1234,6 @@ h2 {
 .popular-item-link:active .popular-item-title {
 	opacity: 0.3;
 } 
-
 
 /*----Services Slider-----*/
 
@@ -1409,12 +1389,9 @@ h2 {
 
 .services-slider-control:hover::before {
   top: 0;
-
   height: 40px;
   margin: 0;
-
   background: #f0c52e;
-
   transition: all 0.3s linear;
 }
 
@@ -1432,87 +1409,63 @@ h2 {
 .services-slider-input[id="services-control-1"]:checked ~ .services-slider-controls label[for="services-control-1"]::before {
   top: 1px;
   z-index: -1;
-
   height: 40px;
   margin: 0;
-
   color: #f7e184;
-
   background: #000;
-
   transition: all 0.3s linear;
 }
 
 .services-slider-input[id="services-control-1"]:checked ~ .services-slider-controls label[for="services-control-1"]::after {
   top: 1px;
   z-index: -1;
-
   width: 120px;
   height: 40px;
   margin: 0;
-
   color: #f7e184;
-
   background: #000;
-
   transition: all 0.3s linear;
 }
 
 .services-slider-input[id="services-control-2"]:checked ~ .services-slider-controls label[for="services-control-2"]::before {
   top: 0;
   z-index: -1;
-
   height: 40px;
   margin: 0;
-
   color: #f7e184;
-
   background: #000;
-
   transition: all 0.3s linear;
 }
 
 .services-slider-input[id="services-control-2"]:checked ~ .services-slider-controls label[for="services-control-2"]::after {
   top: 0;
   z-index: -1;
-
   width: 120px;
   height: 40px;
   margin: 0;
-
   color: #f7e184;
-
   background: #000;
-
   transition: all 0.3s linear;
 }
 
 .services-slider-input[id="services-control-3"]:checked ~ .services-slider-controls label[for="services-control-3"]::before {
   top: 0;
   z-index: -1;
-
   height: 40px;
   margin: 0;
-
   color: #f7e184;
-
   background: #000;
-
   transition: all 0.3s linear;
 }
 
 .services-slider-input[id="services-control-3"]:checked ~ .services-slider-controls label[for="services-control-3"]::after {
   top: 0;
   z-index: -1;
-
   width: 120px;
   height: 40px;
   margin: 0;
-
   color: #f7e184;
-
   background: #000;
-
   transition: all 0.3s linear;
 }
 
@@ -1830,23 +1783,23 @@ h2 {
 
 .filter-checkbox-label::before {
 	content: "";
-    position: absolute;
-    bottom: -2px;
-    left: -40px;
-    width: 23px;
-    height: 23px;
-    background-image: url(../img/checkbox-off.svg);
+  position: absolute;
+  bottom: -2px;
+  left: -40px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
 }
 
 .filter-checkbox-label::after {
 	content: "";
-    position: absolute;
-    bottom: -2px;
-    left: -40px;
-    display: none;
-    width: 27px;
-    height: 23px;
-    background-image: url(../img/checkbox-on.svg);
+  position: absolute;
+  bottom: -2px;
+  left: -40px;
+  display: none;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
 }
 
 .filter-input-checkbox:checked + .filter-checkbox-label::before {
@@ -1876,34 +1829,34 @@ h2 {
 
 .filter-radio-label {
 	position: relative;
-    font-size: 14px;
-    line-height: 40px;
-    color: #000;
-    cursor: pointer;
+  font-size: 14px;
+  line-height: 40px;
+  color: #000;
+  cursor: pointer;
 }
 
 .filter-radio-label::before {
-    content: "";
-  	position: absolute;
-  	bottom: -2px;
-  	left: -40px;
-  	box-sizing: border-box;
-  	width: 25px;
-  	height: 25px;
-  	border: 4px solid #000000;
-  	border-radius: 12.5px;
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -40px;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #000000;
+  border-radius: 12.5px;
 }
 
 .filter-radio-label::after {
 	content: "";
-  	position: absolute;
-  	top: 4px;
-  	left: -32px;
-  	display: none;
-  	width: 9px;
-  	height: 9px;
-  	background-color: #000000;
-  	border-radius: 4.5px;
+  position: absolute;
+  top: 4px;
+  left: -32px;
+  display: none;
+  width: 9px;
+  height: 9px;
+  background-color: #000000;
+  border-radius: 4.5px;
 }
 
 .filter-input-radio:checked + .filter-radio-label::after {
@@ -1932,12 +1885,10 @@ h2 {
 
 .filters-options .button {
 	width: 200px;
-  	margin-left: 2px;
-    background: none;
-    border: none;
+  margin-left: 2px;
+  background: none;
+  border: none;
 }
-
-
 
 /*-----Catalog-----*/
 
@@ -2110,7 +2061,6 @@ h2 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	display: none;
 	width: 360px;
 	height: 380px;
 	padding-top: 169px;
@@ -2118,7 +2068,7 @@ h2 {
 	padding-left: 90px;
 	text-align: center;
 	background-color: #ededed;
-	opacity: .7;
+	z-index: -1;
 }
 
 .goods-item-hover .button {
@@ -2138,11 +2088,13 @@ h2 {
 }
 
 .goods-item:hover .goods-item-hover {
-	display: block;
+	opacity: .7;
+	z-index: 1;
 }
 
 .goods-item:focus-within .goods-item-hover {
-	display: block;
+	opacity: .7;
+	z-index: 1;
 	outline: 1px dotted #212121;
   outline: 5px auto -webkit-focus-ring-color;
 }
