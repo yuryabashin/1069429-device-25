@@ -28,12 +28,11 @@ linkMessage.addEventListener("click", function (evt) {
 
 form.addEventListener("submit", function (evt) {
   if (!userName.value || !email.value) {
-  evt.preventDefault();
-    
-  popupMessage.classList.remove("popup-message-error");
-  popupMessage.offsetWidth = popupMessage.offsetWidth;
-  popupMessage.classList.add("popup-message-error");
-    } 
+    evt.preventDefault();  
+    popupMessage.classList.remove("popup-message-error");
+    popupMessage.offsetWidth = popupMessage.offsetWidth;
+    popupMessage.classList.add("popup-message-error");
+  } 
 })
 
 window.addEventListener("keydown", function (evt) {

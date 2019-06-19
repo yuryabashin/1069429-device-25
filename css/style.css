@@ -56,7 +56,7 @@ html {
 }
 
 body {
-  min-width: 1440px;
+  min-width: 1160px;
 
 	margin: 0;
 	padding: 0;
@@ -391,8 +391,7 @@ h2 {
 	top: 24px;
 	left: -60px;
 	z-index: 2;
-	/*display: none;*/
-	opacity: 0;
+	display: none;
 	width: 1160px;
 	padding-top: 26px;
 	padding-bottom: 34px;
@@ -426,17 +425,17 @@ h2 {
 	padding-right: 20px;
 }
 
-.catalog-link:hover + .catalog-sub-menu-wrapper {
-	opacity: 1;
+.catalog-item:hover .catalog-sub-menu-wrapper {
+	display: block;
 }
 
 .catalog-sub-menu-wrapper:hover,
 .catalog-sub-menu-wrapper:focus-within {
-	opacity: 1;
+	display: block;
 }
 
 .catalog-sub-menu-column a {
-	opacity: 1;
+	display: block;
 }
 
 .catalog-sub-menu-column a:hover {
@@ -1068,10 +1067,6 @@ h2 {
 	fill: #ffc600;
 }
 
-/*.social-button path {
-	fill: #7e7e7e;
-}*/
-
 .social-button {
 	display: flex;
 	align-items: center;
@@ -1090,11 +1085,6 @@ h2 {
 	opacity: 0.1;
 }
 
-.yellow-line {
-	border-bottom: 7px solid #ffc600;
-	width: 80px;
-	margin-bottom: 22px;
-}
 /*-------Сетки-------*/
 
 .main-navigation {
@@ -1124,7 +1114,6 @@ h2 {
 }
 
 .catalog-container {
-	width: 1440px;
 	margin: 0 auto;
 	margin-top: 36px;
 	padding: 0;
@@ -1283,7 +1272,7 @@ h2 {
 }
 
 .services-slider-item-warranty::before {	
-   content: "";
+  content: "";
   position: absolute;
   top: 124px;
   right: -253px;
@@ -1559,7 +1548,7 @@ h2 {
 .page-title {
 	margin: 0;
 	padding: 0;
-	padding-left: 198px;
+	padding-left: 60px;
 }
 
 .catalog-columns {
@@ -1753,11 +1742,11 @@ h2 {
 }
 
 .filter-checkbox-label {
-    position: relative;
-    font-size: 14px;
-    line-height: 40px;
-    color: #000;
-    cursor: pointer;
+  position: relative;
+  font-size: 14px;
+  line-height: 40px;
+  color: #000;
+  cursor: pointer;
 }
 
 .filter-input-checkbox:disabled + .filter-checkbox-label,
@@ -1928,7 +1917,6 @@ h2 {
 
 .goods-sort-list {
 	display: flex;
-	/*flex-wrap: wrap;*/
 	width: 519px;
 	margin: 0;
 	padding: 0;
@@ -2214,7 +2202,7 @@ h2 {
 	margin: 0;
 	margin-top: 19px;
 	padding: 0;
-	padding-left: 200px;
+	padding-left: 59px;
 	padding-bottom: 44px;
 }
 
@@ -2291,9 +2279,28 @@ h2 {
 }
 
 .footer-bottom {
+	position: relative;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 	margin: 56px 0 56px 0;
+}
+
+.footer-bottom::before {
+	content: "";
+  position: absolute;
+  bottom: 22px;
+  left: 1px;
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+}
+
+.footer-bottom-link-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 660px;
 }
 
 .social-buttons {
@@ -2342,7 +2349,6 @@ h2 {
 		transform: translate(-50%, -50%) translateX(10px);
 	}
 }
-
 
 .popup-message {
 	position: fixed;
