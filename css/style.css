@@ -80,15 +80,6 @@ img {
 	height: auto;
 }
 
-h2 {
-	font-family: "Gilroy", Arial, sans-serif;
-	font-weight: 700;
-	font-size: 47px;
-	line-height: 48px;
-	letter-spacing: 0.5px;
-	color: #000000;
-}
-
 .main-header-logo-wrapper a {
 	cursor: pointer;
 }
@@ -110,16 +101,6 @@ h2 {
 .header-login-user-menu {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.icon {
-	background-image: url(../img/search.svg);
-	background-repeat: no-repeat;
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	margin-top: 6px;
-	padding-right: 18px;
 }
 
 .search,
@@ -249,8 +230,8 @@ h2 {
 
 .header-search-label {
 	position: absolute;
-	top: 8px;
-	left: -24px;
+	top: 9px;
+	left: -23px;
 	width: 20px;
 	height: 20px;
 	background-image: url(../img/search.svg);
@@ -393,7 +374,7 @@ h2 {
 	z-index: 2;
 	display: none;
 	width: 1160px;
-	padding-top: 26px;
+	padding-top: 24px;
 	padding-bottom: 34px;
 	padding-left: 60px;
 	background-color: #f7e296; 
@@ -425,12 +406,12 @@ h2 {
 	padding-right: 20px;
 }
 
-.catalog-item:hover .catalog-sub-menu-wrapper {
+.catalog-item:hover .catalog-sub-menu-wrapper,
+.catalog-item:focus-within .catalog-sub-menu-wrapper {
 	display: block;
 }
 
-.catalog-sub-menu-wrapper:hover,
-.catalog-sub-menu-wrapper:focus-within {
+.catalog-sub-menu-wrapper:hover {
 	display: block;
 }
 
@@ -883,6 +864,16 @@ h2 {
 .contacts h2 {
 	margin: 0;
 	margin-bottom: 43px;
+}
+
+.about-title,
+.contacts-title {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 700;
+	font-size: 47px;
+	line-height: 48px;
+	letter-spacing: 0.5px;
+	color: #000000;
 }
 
 .trans-companies {
@@ -2317,36 +2308,50 @@ h2 {
 
 @keyframes bounce {
 	0% {
-		transform: translateY(-2000px) translate(-50%, -50%);
+		-webkit-transform: translateY(-2000px) translate(-50%, -50%);
+				-ms-transform: translateY(-2000px) translate(-50%, -50%);
+		  			transform: translateY(-2000px) translate(-50%, -50%);
 	}
 	70% {
-		transform: translateY(30px) translate(-50%, -50%);
+		-webkit-transform: translateY(30px) translate(-50%, -50%);
+				-ms-transform: translateY(30px) translate(-50%, -50%);
+						transform: translateY(30px) translate(-50%, -50%);
 	}
 	90% {
-		transform: translateY(-10px) translate(-50%, -50%);
+		-webkit-transform: translateY(-10px) translate(-50%, -50%);
+				-ms-transform: translateY(-10px) translate(-50%, -50%);
+						transform: translateY(-10px) translate(-50%, -50%);
 	}
 	100% {
-		transform: translateY(0) translate(-50%, -50%);
+		-webkit-transform: translateY(0) translate(-50%, -50%);
+				-ms-transform: translateY(0) translate(-50%, -50%);
+						transform: translateY(0) translate(-50%, -50%);
 	}
 }
 
 @keyframes shake {
 	0%,
 	100% {
-		transform: translate(-50%, -50%) translateX(0);
+		-webkit-transform: translate(-50%, -50%) translateX(0);
+				-ms-transform: translate(-50%, -50%) translateX(0);
+						transform: translate(-50%, -50%) translateX(0);
 	}
 	10%,
 	30%,
 	50%,
 	70%,
 	90% {
-		transform: translate(-50%, -50%) translateX(-10px);
+		-webkit-transform: translate(-50%, -50%) translateX(-10px);
+				-ms-transform: translate(-50%, -50%) translateX(-10px);
+						transform: translate(-50%, -50%) translateX(-10px);
 	}
 	20%,
 	40%,
 	60%,
 	80% {
-		transform: translate(-50%, -50%) translateX(10px);
+		-webkit-transform: translate(-50%, -50%) translateX(10px);
+				-ms-transform: translate(-50%, -50%) translateX(10px);
+						transform: translate(-50%, -50%) translateX(10px);
 	}
 }
 
@@ -2359,9 +2364,12 @@ h2 {
 	width: 960px;
 	background-color: #fff;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-	transform: translate(-50%, -50%);
-	animation-name: bounce;
-	animation-duration: 0.6s;
+	-webkit-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+	-webkit-animation-name: bounce;
+					animation-name: bounce;
+	-webkit-animation-duration: 0.6s;
+					animation-duration: 0.6s;
 }
 
 .popup-message-active {
@@ -2369,8 +2377,10 @@ h2 {
 }
 
 .popup-message-error {
-	animation-name: shake;
-	animation-duration: 0.6s;
+	-webkit-animation-name: shake;
+					animation-name: shake;
+	-webkit-animation-duration: 0.6s;
+					animation-name: shake;
 }
 
 .popup-message-wrapper {
@@ -2543,9 +2553,13 @@ h2 {
 	height: 559px;
 	background-color: #fff;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-	transform: translate(-50%, -50%);
-	animation-name: bounce;
-	animation-duration: 0.6s;	
+	-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+	-webkit-animation-name: bounce;
+					animation-name: bounce;
+	-webkit-animation-duration: 0.6s;
+					animation-duration: 0.6s;	
 }
 
 .popup-map-active {
