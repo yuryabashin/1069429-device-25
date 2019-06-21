@@ -547,7 +547,7 @@ img {
 }
 
 .button:active {
-	opacity: 0.3;
+	color: rgba(0, 0, 0, .3);
 }
 
 .button:hover::before,
@@ -563,13 +563,7 @@ img {
 	top: 0;
 	height: 40px;
 	margin: 0;
-	opacity: 0.3;
 	transition: all 0.3s linear;
-}
-
-.about a:active,
-.contacts a:active {
-	opacity: 0.3;
 }
 
 .page-title {
